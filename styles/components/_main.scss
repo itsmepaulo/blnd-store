@@ -5,7 +5,7 @@ main {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
-    gap:5rem;
+    gap: 5rem;
 
     .product {
         padding: 15px 0;
@@ -25,6 +25,7 @@ main {
             gap: 20px;
             overflow-x: scroll;
             padding-top: 10px;
+
             .product-item {
                 display: grid;
                 grid-template-rows: 50% 16% 16% 16%;
@@ -34,7 +35,8 @@ main {
                 padding: 10px;
                 width: 200px;
                 height: 250px;
-                box-shadow: 10px 10px 5px #aaaaaa;
+                box-shadow: 3px 3px 5px 6px #aaaaaa;
+
                 img {
                     grid-row: 1 / 2;
                     grid-column: 1 / 3;
@@ -63,10 +65,10 @@ main {
                     grid-row: 4 / 5;
                     grid-column: 1;
                     align-self: center;
-                    
+
                 }
 
-                .comprar{
+                .comprar {
                     grid-row: 4;
                     grid-column: 2;
                     align-self: center;
@@ -79,7 +81,7 @@ main {
                     text-align: center;
                 }
 
-                .comprar:hover{
+                .comprar:hover {
                     color: var(--azul);
                     transition: 1s;
 
@@ -88,6 +90,27 @@ main {
 
 
 
+        }
+
+        /* width */
+        .product-div::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+            
+        }
+
+        /* Track */
+        .product-div::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+            
+        }
+
+        /* Handle */
+        .product-div::-webkit-scrollbar-thumb {
+            background: rgba(156, 145, 154, 0.767);
+            border-radius: 10px;
+            
         }
 
 
@@ -99,14 +122,14 @@ main {
 @media screen and (min-width:992px) {
 
     main {
-    
+
         .product {
-    
+
             h2 {
                 @include mixins.ff-fs-cl(var(--titulo), 2rem, var(--azul));
 
             }
-    
+
             .product-div {
                 margin: auto;
                 display: flex;
@@ -115,53 +138,54 @@ main {
                 padding: 10px 0;
                 width: 80%;
                 overflow: hidden;
+
                 .product-item {
                     width: 250px;
                     height: 300px;
-    
+
 
                     .product-item--caption {
                         @include mixins.ff-fs-cl(var(--texto), 1.4rem, black);
                         font-weight: 400;
                     }
-    
+
                     .price {
                         @include mixins.ff-fs-cl(var(--texto), 1.4rem, black);
                         grid-row: 3;
                         align-self: center;
                         font-weight: 400;
                     }
-    
+
                     .carrinho {
                         grid-row: 4 / 5;
                         grid-column: 1;
                         align-self: center;
-                        
-                        span{
+
+                        span {
                             font-size: 2.2rem;
                         }
                     }
-    
-                    .comprar{
+
+                    .comprar {
                         @include mixins.ff-fs-cl(var(--texto), 1rem, var(--verde));
                         padding: 10px;
                     }
-    
-                    .comprar:hover{
+
+                    .comprar:hover {
                         color: var(--azul);
                         transition: 1s;
-    
+
                     }
                 }
-    
-    
-    
+
+
+
             }
-    
-    
+
+
         }
-    
-    
+
+
     }
 
 }
@@ -169,14 +193,14 @@ main {
 @media screen and (min-width:1325px) {
 
     main {
-    
+
         .product {
-    
+
             h2 {
                 @include mixins.ff-fs-cl(var(--titulo), 2rem, var(--azul));
 
             }
-    
+
             .product-div {
                 margin: auto;
                 display: flex;
@@ -185,42 +209,43 @@ main {
                 padding: 10px 0;
                 width: 70%;
                 overflow: hidden;
+
                 .product-item {
                     width: 250px;
                     height: 300px;
-    
+
 
                     .product-item--caption {
                         @include mixins.ff-fs-cl(var(--texto), 1.4rem, black);
                         font-weight: 400;
                     }
-    
+
                     .price {
                         @include mixins.ff-fs-cl(var(--texto), 1.4rem, black);
                         grid-row: 3;
                         align-self: center;
                         font-weight: 400;
                     }
-    
+
                     .carrinho {
                         grid-row: 4 / 5;
                         grid-column: 1;
                         align-self: center;
-                        
-                        span{
+
+                        span {
                             font-size: 2.2rem;
                         }
                     }
-    
-                    .comprar{
+
+                    .comprar {
                         @include mixins.ff-fs-cl(var(--texto), 1rem, var(--verde));
                         padding: 10px;
                     }
-    
-                    .comprar:hover{
+
+                    .comprar:hover {
                         color: var(--azul);
                         transition: 1s;
-    
+
                     }
                 }
             }

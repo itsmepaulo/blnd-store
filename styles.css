@@ -163,6 +163,9 @@ main {
 main .product {
   padding: 15px 0;
   background-color: rgba(228, 120, 255, 0.3568627451);
+  /* width */
+  /* Track */
+  /* Handle */
 }
 main .product h2 {
   text-align: center;
@@ -189,7 +192,7 @@ main .product .product-div .product-item {
   padding: 10px;
   width: 200px;
   height: 250px;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 3px 3px 5px 6px #aaaaaa;
 }
 main .product .product-div .product-item img {
   grid-row: 1/2;
@@ -239,6 +242,18 @@ main .product .product-div .product-item .comprar {
 main .product .product-div .product-item .comprar:hover {
   color: var(--azul);
   transition: 1s;
+}
+main .product .product-div::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+main .product .product-div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+main .product .product-div::-webkit-scrollbar-thumb {
+  background: rgba(156, 145, 154, 0.767);
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 992px) {
