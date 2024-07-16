@@ -1,0 +1,107 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: var(--rosa);
+    margin-top: 20px;
+
+    ul {
+        padding: 5px;
+        
+        .footer-item {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            padding: 5px;
+            align-items: center;
+            a {
+                text-decoration: none;
+                @include mixins.ff-fs-cl(var(--texto), 0.8rem, var(--azul));
+                font-weight: bold;
+
+                i{
+                    font-size: 0.9rem;
+                }
+            }
+
+            a:hover{
+                color: var(--verde);
+                transition: 1s;
+            }
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+            display: flex;
+        }
+
+
+    }
+
+    ul:nth-child(2){
+        border-left: 1px solid grey;
+    }
+
+    p{
+     align-self: end;
+     @include mixins.ff-fs-cl(var(--texto), 0.9rem, white);
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        ul {
+            padding: 10px;
+            display: flex;
+           
+            .footer-item {
+                list-style: none;
+                text-align: center;
+                display: flex;
+                padding: 5px;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    @include mixins.ff-fs-cl(var(--texto), 1.2rem, var(--azul));
+                    font-weight: bold;
+    
+                    i{
+                        font-size: 1.5rem;
+                    }
+                }
+    
+                a:hover{
+                    color: var(--verde);
+                    transition: 1s;
+                }
+            }
+            
+            li {
+                list-style: none;
+                text-align: center;
+                display: flex;
+            }
+    
+    
+        }
+    
+        ul:nth-child(2){
+            border-left: 1px solid grey;
+        }
+    
+        p{
+         align-self: end;
+         @include mixins.ff-fs-cl(var(--titulo), 1rem, white);
+        }
+    }
+    
+
+}
