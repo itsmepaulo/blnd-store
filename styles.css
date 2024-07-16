@@ -161,7 +161,7 @@ main {
   gap: 5rem;
 }
 main .product {
-  padding-top: 15px;
+  padding: 15px 0;
   background-color: rgba(228, 120, 255, 0.3568627451);
 }
 main .product h2 {
@@ -189,6 +189,7 @@ main .product .product-div .product-item {
   padding: 10px;
   width: 200px;
   height: 250px;
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 main .product .product-div .product-item img {
   grid-row: 1/2;
