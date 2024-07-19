@@ -48,7 +48,7 @@ main {
                 }
 
                 .product-item--caption {
-                    @include mixins.ff-fs-cl(var(--texto), 0.9rem, black);
+                    @include mixins.ff-fs-cl(var(--texto), 0.7rem, black);
                     align-self: center;
                     grid-row: 3;
                     grid-column: 1 / 3;
