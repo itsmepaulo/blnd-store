@@ -206,7 +206,7 @@ main .product .product-div .product-item img {
 }
 main .product .product-div .product-item .product-item--caption {
   font-family: var(--texto);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: black;
   align-self: center;
   grid-row: 3;
@@ -216,7 +216,7 @@ main .product .product-div .product-item .product-item--caption {
 }
 main .product .product-div .product-item .price {
   font-family: var(--texto);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: black;
   grid-row: 4;
   grid-column: 1;

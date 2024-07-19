@@ -57,7 +57,7 @@ main {
                 }   
 
                 .price {
-                    @include mixins.ff-fs-cl(var(--texto), 0.9rem, black);
+                    @include mixins.ff-fs-cl(var(--texto), 0.7rem, black);
                     grid-row: 4;
                     grid-column: 1;
                     align-self: center;
