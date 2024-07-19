@@ -18,6 +18,7 @@ main {
 
 header {
   background-color: var(--rosa);
+  padding: 15px;
 }
 header h1 {
   font-family: var(--titulo);
@@ -369,6 +370,7 @@ footer {
   grid-template-columns: 33% 33% 33%;
   background-color: var(--rosa);
   margin-top: 20px;
+  padding: 10px;
 }
 footer ul {
   padding: 5px;
