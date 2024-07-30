@@ -133,7 +133,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: auto;
         box-sizing: border-box;
 
         .product {
@@ -152,7 +152,7 @@ main {
                 overflow: hidden;
                 overflow-x: scroll;
                 height: 95%;
-                gap: 30px;
+                gap: 45px;
                 padding-bottom: 15px;
 
                 img {
