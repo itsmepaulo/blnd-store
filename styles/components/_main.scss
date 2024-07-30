@@ -81,6 +81,7 @@ main {
                 .comprar {
                     grid-row: 5;
                     grid-column: 2;
+                    margin: auto;
                     align-self: center;
                     text-decoration: none;
                     @include mixins.ff-fs-cl(var(--texto), 0.8rem, var(--verde));
