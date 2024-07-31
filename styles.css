@@ -134,6 +134,17 @@ header .home__categorias ul li a:hover {
     font-size: 1rem;
     color: black;
     width: 400px;
+    animation: typing 1s steps(40), blink 0.5s step-end infinite alternate;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
   header .material-symbols-outlined {
     display: none;

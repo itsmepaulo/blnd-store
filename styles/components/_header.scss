@@ -18,7 +18,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 10px;
-
+        
         ul {
             display: flex;
             list-style: none;
@@ -29,6 +29,7 @@ header {
                 text-decoration: none;
                 font-weight: 700;
                 text-transform: uppercase;
+
             }
 
             .home__nav-item:hover {
@@ -43,6 +44,7 @@ header {
             border-radius: 1rem;
             @include mixins.ff-fs-cl(var(--texto), 0.8rem, black);
             background-color: rgba(201, 198, 198, 0.575);
+            
         }
     }
 
@@ -123,6 +125,18 @@ header {
             input {
                 @include mixins.ff-fs-cl(var(--texto), 1rem, black);
                 width: 400px;
+                animation: typing 1s steps(40), blink .5s step-end infinite alternate;
+
+            @keyframes typing{
+                from{
+                    width: 0;
+                }
+            }
+            @keyframes blink{
+                50%{
+                    border-color: transparent;
+                }
+            }
             }
 
         }
