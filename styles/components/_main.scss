@@ -25,7 +25,7 @@ main {
             gap: 20px;
             overflow-x: scroll;
             padding-top: 10px;
-
+            padding-bottom: 20px;
             .product-item {
                 display: grid;
                 grid-template-rows: 50% 12.5% 12.5% 12.5% 12.5%;

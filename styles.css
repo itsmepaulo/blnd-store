@@ -24,7 +24,6 @@ main {
 
 header {
   background-color: var(--rosa);
-  padding: 15px;
 }
 header h1 {
   font-family: var(--titulo);
@@ -189,6 +188,7 @@ main .product .product-div {
   gap: 20px;
   overflow-x: scroll;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 main .product .product-div .product-item {
   display: grid;

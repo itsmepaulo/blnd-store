@@ -24,7 +24,6 @@ main {
 
 header {
   background-color: var(--rosa);
-  padding: 15px;
 }
 header h1 {
   font-family: var(--titulo);

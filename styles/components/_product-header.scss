@@ -3,7 +3,6 @@
 
 header {
     background-color: var(--rosa);
-    padding: 15px;
     h1 {
         @include mixins.ff-fs-cl(var(--titulo), 2.5rem, var(--verde));
         text-align: center;
