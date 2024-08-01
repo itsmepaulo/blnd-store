@@ -110,6 +110,18 @@ header .home__categorias ul li a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  header {
+    animation-name: bg;
+    animation-duration: 3s;
+  }
+  @keyframes bg {
+    from {
+      background-color: rgba(145, 81, 161, 0.8078431373);
+    }
+    to {
+      background-color: var(--rosa);
+    }
+  }
   header h1 {
     font-family: var(--titulo);
     font-size: 3rem;

@@ -102,6 +102,19 @@ header {
 @media screen and (min-width:992px) {
 
     header {
+        animation-name: bg;
+        animation-duration: 3s;
+
+        @keyframes bg {
+            from {
+                background-color: #9151a1ce;
+            }
+
+            to {
+                background-color: var(--rosa);
+            }
+        }
+
         h1 {
             @include mixins.ff-fs-cl(var(--titulo), 3rem, var(--verde));
         }

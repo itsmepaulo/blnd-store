@@ -3,7 +3,8 @@
 
 header {
     background-color: var(--rosa);
-    
+
+
     h1 {
         @include mixins.ff-fs-cl(var(--titulo), 2.5rem, var(--verde));
         text-align: center;
@@ -18,7 +19,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        
+
         ul {
             display: flex;
             list-style: none;
@@ -44,7 +45,7 @@ header {
             border-radius: 1rem;
             @include mixins.ff-fs-cl(var(--texto), 0.8rem, black);
             background-color: rgba(201, 198, 198, 0.575);
-            
+
         }
     }
 
@@ -104,6 +105,19 @@ header {
 @media screen and (min-width:992px) {
 
     header {
+        animation-name: bg;
+        animation-duration: 3s;
+
+        @keyframes bg {
+            from {
+                background-color: #9151a1ce;
+            }
+
+            to {
+                background-color: var(--rosa);
+            }
+        }
+
         h1 {
             @include mixins.ff-fs-cl(var(--titulo), 3rem, var(--verde));
         }
@@ -127,16 +141,17 @@ header {
                 width: 400px;
                 animation: typing 1s steps(40), blink .5s step-end infinite alternate;
 
-            @keyframes typing{
-                from{
-                    width: 0;
+                @keyframes typing {
+                    from {
+                        width: 0;
+                    }
                 }
-            }
-            @keyframes blink{
-                50%{
-                    border-color: transparent;
+
+                @keyframes blink {
+                    50% {
+                        border-color: transparent;
+                    }
                 }
-            }
             }
 
         }
