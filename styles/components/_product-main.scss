@@ -231,14 +231,9 @@ main {
                 label {
 
                     button {
-                        padding: 10px 10px;
-                        text-transform: uppercase;
                         background-color: black;
                         @include mixins.ff-fs-cl("arial", 0.9rem, var(--rosa));
-                        cursor: pointer;
-                        border: none;
-                        font-weight: 700;
-                        text-align: center;
+                        @include mixins.botao;
                     }
 
                     button:hover {

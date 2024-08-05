@@ -1,6 +1,15 @@
-@mixin ff-fs-cl($ff, $fs, $cl){
+@mixin ff-fs-cl($ff, $fs, $cl) {
     font-family: $ff;
     font-size: $fs;
     color: $cl;
 
+}
+
+@mixin botao {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    text-align: center;
 }

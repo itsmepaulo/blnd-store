@@ -391,12 +391,12 @@ main .product .product-inf label button:hover {
     border: 1px solid var(--rosa);
   }
   main .product .product-inf label button {
-    padding: 10px 10px;
-    text-transform: uppercase;
     background-color: black;
     font-family: "arial";
     font-size: 0.9rem;
     color: var(--rosa);
+    padding: 10px 10px;
+    text-transform: uppercase;
     cursor: pointer;
     border: none;
     font-weight: 700;
