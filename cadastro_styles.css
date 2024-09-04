@@ -1,12 +1,11 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main {
+  background-color: rgba(176, 255, 183, 0.6117647059);
 }
 
 @font-face {
@@ -16,10 +15,11 @@ body {
   font-style: normal;
 }
 :root {
-  --fonte1:"longhaul", sans-serif;
+  --titulo:"longhaul", sans-serif;
   --rosa:#e478ff;
   --verde: #8ce994;
   --azul:rgb(39, 39, 167);
+  --texto: "Inter", sans-serif;
 }
 
 main {

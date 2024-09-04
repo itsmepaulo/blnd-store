@@ -294,6 +294,23 @@ main .product .product-div::-webkit-scrollbar-thumb {
   background: rgba(156, 145, 154, 0.767);
   border-radius: 10px;
 }
+main .product .ver {
+  display: flex;
+  justify-content: flex-end;
+}
+main .product .ver .ver-mais {
+  padding: 5px 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-family: var(--titulo);
+  font-size: 1rem;
+  color: var(--azul);
+  text-decoration: none;
+}
+main .product .ver .ver-mais:hover {
+  color: var(--verde);
+  transition: 1s;
+}
 
 @media screen and (min-width: 992px) {
   main .product h2 {

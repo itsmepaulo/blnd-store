@@ -124,7 +124,25 @@ main {
             
         }
 
+        .ver{
+            display: flex;
+            justify-content: flex-end;
+            .ver-mais{
+                padding: 5px 0;
+                margin-top: 20px;
+                margin-right: 20px;
+                @include mixins.ff-fs-cl(var(--titulo), 1rem, var(--azul));
+                text-decoration: none;
+                
+            }
+            .ver-mais:hover {
+                color: var(--verde);
+                transition: 1s;
+            }
 
+        }
+
+        
     }
 
 
