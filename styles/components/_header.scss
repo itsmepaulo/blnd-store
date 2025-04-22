@@ -20,6 +20,11 @@ header {
         align-items: center;
         gap: 10px;
 
+        .modalCarrinho {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
         ul {
             display: flex;
             list-style: none;
@@ -59,7 +64,7 @@ header {
         transition: 10s;
     }
 
-    .material-symbols-outlined {
+    .testeBolacha {
         text-align: center;
         display: block;
         font-weight: 600;
@@ -128,6 +133,8 @@ header {
             justify-content: center;
             gap: 4rem;
 
+
+
             ul {
                 gap: 30px;
 
@@ -156,7 +163,7 @@ header {
 
         }
 
-        .material-symbols-outlined {
+        .testeBolacha {
             display: none;
 
         }

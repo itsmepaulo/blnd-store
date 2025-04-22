@@ -1,5 +1,5 @@
-@use '../abstract/variaveis';
-@use '../abstract/mixins';
+@use '../../abstract/variaveis';
+@use '../../abstract/mixins';
 
 main {
     padding-top: 15px;
@@ -65,11 +65,10 @@ main {
 
                 .price {
                     @include mixins.ff-fs-cl(var(--texto), 0.7rem, black);
-                    grid-row: 4 / 5;
-                    grid-column: 1 / 2;
+                    grid-row: 4;
+                    grid-column: 1;
                     align-self: center;
                     font-weight: bold;
-                    margin: 0;
                 }
 
                 .carrinho {
@@ -171,8 +170,8 @@ main {
 
                 .product-item {
                     width: 250px;
-                    height: 400px;
-                    
+                    height: 300px;
+
 
                     .product-item--caption {
                         @include mixins.ff-fs-cl(var(--texto), 1.3rem, black);
@@ -181,17 +180,15 @@ main {
 
                     .price {
                         @include mixins.ff-fs-cl(var(--texto), 1.3rem, black);
-                        grid-row: 4 / 5;
-                        grid-column: 1 / 2;
+                        grid-row: 4;
                         align-self: center;
                         font-weight: 400;
-                        margin: 0;
                     }
 
                     .carrinho {
                         grid-row: 5;
                         grid-column: 1;
-                        align-self: start;
+                        align-self: center;
 
                         span {
                             font-size: 2.2rem;
@@ -244,7 +241,7 @@ main {
 
                 .product-item {
                     width: 300px;
-                    height: 400px;
+                    height: 350px;
 
 
                     .product-item--caption {
@@ -254,21 +251,18 @@ main {
 
                     .price {
                         @include mixins.ff-fs-cl(var(--texto), 1.3rem, black);
-                        grid-row: 4 / 5;
-                        grid-column: 1 / 2;
+                        grid-row: 4;
                         align-self: center;
                         font-weight: 400;
-                        margin: 0;
                     }
 
                     .carrinho {
                         grid-row: 5;
                         grid-column: 1;
-                        align-self: end;
+                        align-self: center;
 
                         span {
                             font-size: 2.2rem;
-                            
                         }
                     }
 
