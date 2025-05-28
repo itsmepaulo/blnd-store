@@ -42,6 +42,7 @@ header .home__nav {
 }
 header .home__nav .modalCarrinho {
   font-size: 2rem;
+  cursor: pointer;
 }
 header .home__nav ul {
   display: flex;
@@ -76,6 +77,9 @@ header .bolacha:checked ~ .home__categorias {
   display: block;
   transition: 10s;
 }
+header .teste {
+  display: block;
+}
 header .testeBolacha {
   text-align: center;
   display: block;
@@ -83,7 +87,7 @@ header .testeBolacha {
   font-size: 2rem;
   color: var(--azul);
   cursor: pointer;
-  margin-top: 15px;
+  margin: 15px auto;
 }
 header .home__categorias {
   text-align: center;

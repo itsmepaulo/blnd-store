@@ -56,12 +56,16 @@ header {
 
     .bolacha {
         display: none;
-
+        
     }
 
     .bolacha:checked~.home__categorias {
         display: block;
         transition: 10s;
+    }
+
+    .teste{
+        display: block;
     }
 
     .testeBolacha {
@@ -71,7 +75,8 @@ header {
         font-size: 2rem;
         color: var(--azul);
         cursor: pointer;
-        margin-top: 15px;
+        margin: 15px auto;
+        
     }
 
     .home__categorias {

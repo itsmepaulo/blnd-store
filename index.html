@@ -25,22 +25,22 @@
         <nav class="home__nav">
 
 
-
+        <!-- MODAL -->
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-lg" id="cart-modal">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Seu Carrinho</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <ul id="cart-items"></ul>
+                            <h4>Total: R$ <span id="cart-total">0.00</span></h4>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                     <img src="medias/tshirt-golf-wang.jpg" alt="">
                     <a href="products/product-tshirt-golfwang.html" class="product-item--caption">Camiseta Golf</a>
                     <p class="price">R$300.00</p>
-                    <a href="#" class="carrinho">
+                    <a href="#" class="carrinho" onclick="addToCart('Camiseta Golf', 300.00)">
                         <span class="material-symbols-outlined">
                             add_shopping_cart
                         </span>
@@ -364,6 +364,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
